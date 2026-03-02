@@ -1,0 +1,77 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Indiranagar"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [77.6295, 12.9690],
+            [77.6450, 12.9690],
+            [77.6450, 12.9850],
+            [77.6295, 12.9850],
+            [77.6295, 12.9690]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Whitefield"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [77.7300, 12.9500],
+            [77.7700, 12.9500],
+            [77.7700, 12.9900],
+            [77.7300, 12.9900],
+            [77.7300, 12.9500]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Koramangala"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [77.6100, 12.9200],
+            [77.6400, 12.9200],
+            [77.6400, 12.9500],
+            [77.6100, 12.9500],
+            [77.6100, 12.9200]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Yelahanka"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [77.5600, 13.0800],
+            [77.6000, 13.0800],
+            [77.6000, 13.1200],
+            [77.5600, 13.1200],
+            [77.5600, 13.0800]
+          ]
+        ]
+      }
+    }
+  ]
+}

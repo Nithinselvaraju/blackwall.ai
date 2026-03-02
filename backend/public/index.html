@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>City Grid Generator</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
+  <script src="https://unpkg.com/leaflet-image/leaflet-image.js"></script>
+
+  <style>
+    #map {
+      height: 600px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>City Grid Generator</h2>
+
+<input type="text" id="city" placeholder="Enter region name" />
+<button onclick="generate()">Generate</button>
+<button onclick="downloadMap()">Download PNG</button>
+<button onclick="downloadGridJSON()">Download Grid JSON</button>
+
+
+<div id="map"></div>
+
+<script>
+
+let map = L.map('map', {
+  
+}).setView([22.9734, 78.6569], 5);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 18,
+  crossOrigin: true
+}).addTo(map);
+
+let boundaryLayerGroup = L.layerGroup().addTo(map);
+let gridLayerGroup = L.layerGroup().addTo(map);
+
+let currentData = null;
+let currentBoundary = null;
+let currentGrids = [];
+
+
+// ================= GENERATE =================
+
+async function generate() {
+
+  const region = document.getElementById("city").value;
+
+  try {
+
+    const response = await fetch("/api/geo/generate-grid", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ region })
+    });
+
+    const data = await response.json();
+
+    currentData = data;
+    currentBoundary = data.boundary;
+    currentGrids = data.grids;
+
+    boundaryLayerGroup.clearLayers();
+    gridLayerGroup.clearLayers();
+
+    if (!data.boundary) {
+      console.error("Boundary missing");
+      return;
+    }
+
+    const boundaryLayer = L.geoJSON(data.boundary, {
+      renderer: L.canvas(),
+      style: {
+        color: "orange",
+        weight: 3,
+        fillOpacity: 0.05
+      }
+    });
+
+    boundaryLayerGroup.addLayer(boundaryLayer);
+
+    const bounds = boundaryLayer.getBounds();
+
+    if (bounds && bounds.isValid()) {
+      map.fitBounds(bounds);
+    } else if (data.grids.length > 0) {
+      map.setView(
+        [data.grids[0].lat, data.grids[0].lon],
+        8
+      );
+    }
+
+    if (data.total_grids <= 800) {
+      renderFullCircles(data);
+    } else {
+      renderLightweight(data);
+    }
+
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+// ================= FULL CIRCLE MODE =================
+
+function renderFullCircles(data) {
+
+  gridLayerGroup.clearLayers();
+
+  data.grids.forEach((grid, index) => {
+
+    const circleGeoJson = turf.circle(
+      [grid.lon, grid.lat],
+      data.radius_km,
+      { units: "kilometers", steps: 24 }
+    );
+
+    const circleLayer = L.geoJSON(circleGeoJson, {
+      style: {
+        color: "blue",
+        fillOpacity: 0.2,
+        weight: 2
+      }
+    });
+
+    const marker = L.circleMarker([grid.lat, grid.lon], {
+      radius: 5,
+      color: "blue",
+      fillOpacity: 1
+    });
+
+    marker.bindPopup(`
+      <b>Grid No:</b> ${index + 1}<br/>
+      <b>Name:</b> ${grid.area_name || "Unknown Area"}<br/>
+      <b>Latitude:</b> ${grid.lat.toFixed(6)}<br/>
+      <b>Longitude:</b> ${grid.lon.toFixed(6)}<br/>
+      <b>Radius:</b> ${data.radius_km} km
+    `);
+
+    gridLayerGroup.addLayer(circleLayer);
+    gridLayerGroup.addLayer(marker);
+  });
+}
+
+
+
+// ================= LIGHTWEIGHT MODE =================
+
+function renderLightweight(data) {
+
+  gridLayerGroup.clearLayers();
+
+  data.grids.forEach(grid => {
+
+    const marker = L.circleMarker([grid.lat, grid.lon], {
+      radius: 3,
+      color: "blue",
+      fillOpacity: 0.7
+    });
+
+    gridLayerGroup.addLayer(marker);
+  });
+}
+
+// ================= EXPORT =================
+
+async function downloadMap() {
+
+  if (!currentBoundary) {
+    alert("Generate map first");
+    return;
+  }
+
+  try {
+
+    const response = await fetch("/api/geo/export-map", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+    body: JSON.stringify({
+      boundary: currentBoundary,
+      grids: currentGrids,
+      radius_km: currentData.radius_km
+    })
+    });
+
+    if (!response.ok) {
+      throw new Error("Download failed");
+    }
+
+    const blob = await response.blob();
+    const url = window.URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "map-export.png";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+
+  } catch (error) {
+    console.error("Download error:", error);
+    alert("Download failed.");
+  }
+}
+
+// grid download json
+
+async function downloadGridJSON() {
+
+  if (!currentData) {
+    alert("Generate grid first");
+    return;
+  }
+
+  const response = await fetch("/api/geo/export-grid-json", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(currentData)
+  });
+
+  const enrichedData = await response.json();
+
+  // Update data
+  currentData = enrichedData;
+
+  // Re-render properly
+  renderFullCircles(currentData);
+
+  // Download file
+  const blob = new Blob(
+    [JSON.stringify(enrichedData, null, 2)],
+    { type: "application/json" }
+  );
+
+  const url = window.URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `${currentData.region}_grid_with_names.json`;
+  a.click();
+}
+
+
+</script>
+
+</body>
+</html>

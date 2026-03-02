@@ -1,0 +1,768 @@
+{
+  "meta": {
+    "total_locations": 95,
+    "generated_at": "2026-02-09T16:47:53.722Z"
+  },
+  "reports": [
+    {
+      "id": 1,
+      "name": "Delhi_Grid_001",
+      "lat": 28.510631,
+      "lon": 77.107091,
+      "general_name": "Vasant Vihar Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 2,
+      "name": "Delhi_Grid_002",
+      "lat": 28.510631,
+      "lon": 77.142,
+      "general_name": "Mehrauli",
+      "city": "Delhi"
+    },
+    {
+      "id": 3,
+      "name": "Delhi_Grid_003",
+      "lat": 28.510631,
+      "lon": 77.176909,
+      "general_name": "Mehrauli Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 4,
+      "name": "Delhi_Grid_004",
+      "lat": 28.510631,
+      "lon": 77.211818,
+      "general_name": "Saket Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 5,
+      "name": "Delhi_Grid_005",
+      "lat": 28.510631,
+      "lon": 77.246727,
+      "general_name": "Kalkaji Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 6,
+      "name": "Delhi_Grid_006",
+      "lat": 28.510631,
+      "lon": 77.281637,
+      "general_name": "Kalkaji Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 7,
+      "name": "Delhi_Grid_007",
+      "lat": 28.541261,
+      "lon": 77.054727,
+      "general_name": "Kapashera Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 8,
+      "name": "Delhi_Grid_008",
+      "lat": 28.541261,
+      "lon": 77.089636,
+      "general_name": "Samalkha",
+      "city": "Delhi"
+    },
+    {
+      "id": 9,
+      "name": "Delhi_Grid_009",
+      "lat": 28.541261,
+      "lon": 77.124546,
+      "general_name": "Mahipalpur",
+      "city": "Delhi"
+    },
+    {
+      "id": 10,
+      "name": "Delhi_Grid_010",
+      "lat": 28.541261,
+      "lon": 77.159455,
+      "general_name": "Mahipalpur",
+      "city": "Delhi"
+    },
+    {
+      "id": 11,
+      "name": "Delhi_Grid_011",
+      "lat": 28.541261,
+      "lon": 77.194364,
+      "general_name": "Hauz Khas Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 12,
+      "name": "Delhi_Grid_012",
+      "lat": 28.541261,
+      "lon": 77.229273,
+      "general_name": "Hauz Khas Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 13,
+      "name": "Delhi_Grid_013",
+      "lat": 28.541261,
+      "lon": 77.264182,
+      "general_name": "Kalkaji Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 14,
+      "name": "Delhi_Grid_014",
+      "lat": 28.541261,
+      "lon": 77.299091,
+      "general_name": "Sarita Vihar",
+      "city": "Delhi"
+    },
+    {
+      "id": 15,
+      "name": "Delhi_Grid_015",
+      "lat": 28.571892,
+      "lon": 77.002364,
+      "general_name": "Shyam Vihar",
+      "city": "Delhi"
+    },
+    {
+      "id": 16,
+      "name": "Delhi_Grid_016",
+      "lat": 28.571892,
+      "lon": 77.037273,
+      "general_name": "Dwarka",
+      "city": "Delhi"
+    },
+    {
+      "id": 17,
+      "name": "Delhi_Grid_017",
+      "lat": 28.571892,
+      "lon": 77.072182,
+      "general_name": "Dwarka",
+      "city": "Delhi"
+    },
+    {
+      "id": 18,
+      "name": "Delhi_Grid_018",
+      "lat": 28.571892,
+      "lon": 77.107091,
+      "general_name": "Rangpuri",
+      "city": "Delhi"
+    },
+    {
+      "id": 19,
+      "name": "Delhi_Grid_019",
+      "lat": 28.571892,
+      "lon": 77.142,
+      "general_name": "Shankar Vihar",
+      "city": "Delhi"
+    },
+    {
+      "id": 20,
+      "name": "Delhi_Grid_020",
+      "lat": 28.571892,
+      "lon": 77.176909,
+      "general_name": "Ramakrishna Puram",
+      "city": "Delhi"
+    },
+    {
+      "id": 21,
+      "name": "Delhi_Grid_021",
+      "lat": 28.571892,
+      "lon": 77.211818,
+      "general_name": "Defence Colony Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 22,
+      "name": "Delhi_Grid_022",
+      "lat": 28.571892,
+      "lon": 77.246727,
+      "general_name": "Defence Colony Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 23,
+      "name": "Delhi_Grid_023",
+      "lat": 28.571892,
+      "lon": 77.281637,
+      "general_name": "Jamia Nagar",
+      "city": "Delhi"
+    },
+    {
+      "id": 24,
+      "name": "Delhi_Grid_024",
+      "lat": 28.571892,
+      "lon": 77.316546,
+      "general_name": "Dadri",
+      "city": "Delhi"
+    },
+    {
+      "id": 25,
+      "name": "Delhi_Grid_025",
+      "lat": 28.602523,
+      "lon": 76.984909,
+      "general_name": "Shyam Vihar",
+      "city": "Delhi"
+    },
+    {
+      "id": 26,
+      "name": "Delhi_Grid_026",
+      "lat": 28.602523,
+      "lon": 77.019818,
+      "general_name": "Dwarka",
+      "city": "Delhi"
+    },
+    {
+      "id": 27,
+      "name": "Delhi_Grid_027",
+      "lat": 28.602523,
+      "lon": 77.054727,
+      "general_name": "Dwarka",
+      "city": "Delhi"
+    },
+    {
+      "id": 28,
+      "name": "Delhi_Grid_028",
+      "lat": 28.602523,
+      "lon": 77.089636,
+      "general_name": "Dwarka",
+      "city": "Delhi"
+    },
+    {
+      "id": 29,
+      "name": "Delhi_Grid_029",
+      "lat": 28.602523,
+      "lon": 77.124546,
+      "general_name": "Dhaula Kuan",
+      "city": "Delhi"
+    },
+    {
+      "id": 30,
+      "name": "Delhi_Grid_030",
+      "lat": 28.602523,
+      "lon": 77.159455,
+      "general_name": "Dhaula Kuan",
+      "city": "Delhi"
+    },
+    {
+      "id": 31,
+      "name": "Delhi_Grid_031",
+      "lat": 28.602523,
+      "lon": 77.194364,
+      "general_name": "Connaught Place",
+      "city": "Delhi"
+    },
+    {
+      "id": 32,
+      "name": "Delhi_Grid_032",
+      "lat": 28.602523,
+      "lon": 77.229273,
+      "general_name": "Connaught Place",
+      "city": "Delhi"
+    },
+    {
+      "id": 33,
+      "name": "Delhi_Grid_033",
+      "lat": 28.602523,
+      "lon": 77.264182,
+      "general_name": "Mayur Vihar",
+      "city": "Delhi"
+    },
+    {
+      "id": 34,
+      "name": "Delhi_Grid_034",
+      "lat": 28.602523,
+      "lon": 77.299091,
+      "general_name": "Mayur Vihar Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 35,
+      "name": "Delhi_Grid_035",
+      "lat": 28.633153,
+      "lon": 76.967455,
+      "general_name": "Najafgarh",
+      "city": "Delhi"
+    },
+    {
+      "id": 36,
+      "name": "Delhi_Grid_036",
+      "lat": 28.633153,
+      "lon": 77.002364,
+      "general_name": "Najafgarh",
+      "city": "Delhi"
+    },
+    {
+      "id": 37,
+      "name": "Delhi_Grid_037",
+      "lat": 28.633153,
+      "lon": 77.037273,
+      "general_name": "Patel Nagar",
+      "city": "Delhi"
+    },
+    {
+      "id": 38,
+      "name": "Delhi_Grid_038",
+      "lat": 28.633153,
+      "lon": 77.072182,
+      "general_name": "Vikaspuri",
+      "city": "Delhi"
+    },
+    {
+      "id": 39,
+      "name": "Delhi_Grid_039",
+      "lat": 28.633153,
+      "lon": 77.107091,
+      "general_name": "Rajouri Garden Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 40,
+      "name": "Delhi_Grid_040",
+      "lat": 28.633153,
+      "lon": 77.142,
+      "general_name": "Naraina",
+      "city": "Delhi"
+    },
+    {
+      "id": 41,
+      "name": "Delhi_Grid_041",
+      "lat": 28.633153,
+      "lon": 77.176909,
+      "general_name": "Patel Nagar",
+      "city": "Delhi"
+    },
+    {
+      "id": 42,
+      "name": "Delhi_Grid_042",
+      "lat": 28.633153,
+      "lon": 77.211818,
+      "general_name": "Chanakya Puri Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 43,
+      "name": "Delhi_Grid_043",
+      "lat": 28.633153,
+      "lon": 77.246727,
+      "general_name": "Old Delhi",
+      "city": "Delhi"
+    },
+    {
+      "id": 44,
+      "name": "Delhi_Grid_044",
+      "lat": 28.633153,
+      "lon": 77.281637,
+      "general_name": "Shakarpur",
+      "city": "Delhi"
+    },
+    {
+      "id": 45,
+      "name": "Delhi_Grid_045",
+      "lat": 28.633153,
+      "lon": 77.316546,
+      "general_name": "Preet Vihar Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 46,
+      "name": "Delhi_Grid_046",
+      "lat": 28.663784,
+      "lon": 76.984909,
+      "general_name": "Punjabi Bagh Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 47,
+      "name": "Delhi_Grid_047",
+      "lat": 28.663784,
+      "lon": 77.019818,
+      "general_name": "Lok Nayak Puram",
+      "city": "Delhi"
+    },
+    {
+      "id": 48,
+      "name": "Delhi_Grid_048",
+      "lat": 28.663784,
+      "lon": 77.054727,
+      "general_name": "Punjabi Bagh Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 49,
+      "name": "Delhi_Grid_049",
+      "lat": 28.663784,
+      "lon": 77.089636,
+      "general_name": "Paschim Vihar",
+      "city": "Delhi"
+    },
+    {
+      "id": 50,
+      "name": "Delhi_Grid_050",
+      "lat": 28.663784,
+      "lon": 77.124546,
+      "general_name": "Punjabi Bagh Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 51,
+      "name": "Delhi_Grid_051",
+      "lat": 28.663784,
+      "lon": 77.159455,
+      "general_name": "Saraswati Vihar Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 52,
+      "name": "Delhi_Grid_052",
+      "lat": 28.663784,
+      "lon": 77.194364,
+      "general_name": "Civil Lines Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 53,
+      "name": "Delhi_Grid_053",
+      "lat": 28.663784,
+      "lon": 77.229273,
+      "general_name": "Kotwali Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 54,
+      "name": "Delhi_Grid_054",
+      "lat": 28.663784,
+      "lon": 77.264182,
+      "general_name": "Gandhi Nagar",
+      "city": "Delhi"
+    },
+    {
+      "id": 55,
+      "name": "Delhi_Grid_055",
+      "lat": 28.663784,
+      "lon": 77.299091,
+      "general_name": "Vivek Vihar Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 56,
+      "name": "Delhi_Grid_056",
+      "lat": 28.694414,
+      "lon": 76.967455,
+      "general_name": "Punjabi Bagh Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 57,
+      "name": "Delhi_Grid_057",
+      "lat": 28.694414,
+      "lon": 77.002364,
+      "general_name": "Kanjhawalan Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 58,
+      "name": "Delhi_Grid_058",
+      "lat": 28.694414,
+      "lon": 77.037273,
+      "general_name": "Punjabi Bagh Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 59,
+      "name": "Delhi_Grid_059",
+      "lat": 28.694414,
+      "lon": 77.072182,
+      "general_name": "Rohini Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 60,
+      "name": "Delhi_Grid_060",
+      "lat": 28.694414,
+      "lon": 77.107091,
+      "general_name": "Pitampura",
+      "city": "Delhi"
+    },
+    {
+      "id": 61,
+      "name": "Delhi_Grid_061",
+      "lat": 28.694414,
+      "lon": 77.142,
+      "general_name": "Saraswati Vihar Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 62,
+      "name": "Delhi_Grid_062",
+      "lat": 28.694414,
+      "lon": 77.176909,
+      "general_name": "Saraswati Vihar Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 63,
+      "name": "Delhi_Grid_063",
+      "lat": 28.694414,
+      "lon": 77.211818,
+      "general_name": "Civil Lines Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 64,
+      "name": "Delhi_Grid_064",
+      "lat": 28.694414,
+      "lon": 77.246727,
+      "general_name": "Majnu Ka Tila",
+      "city": "Delhi"
+    },
+    {
+      "id": 65,
+      "name": "Delhi_Grid_065",
+      "lat": 28.694414,
+      "lon": 77.281637,
+      "general_name": "Shahdara Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 66,
+      "name": "Delhi_Grid_066",
+      "lat": 28.694414,
+      "lon": 77.316546,
+      "general_name": "Nand Nagari",
+      "city": "Delhi"
+    },
+    {
+      "id": 67,
+      "name": "Delhi_Grid_067",
+      "lat": 28.725045,
+      "lon": 76.984909,
+      "general_name": "Kanjhawalan Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 68,
+      "name": "Delhi_Grid_068",
+      "lat": 28.725045,
+      "lon": 77.019818,
+      "general_name": "Rohini Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 69,
+      "name": "Delhi_Grid_069",
+      "lat": 28.725045,
+      "lon": 77.054727,
+      "general_name": "Rohini",
+      "city": "Delhi"
+    },
+    {
+      "id": 70,
+      "name": "Delhi_Grid_070",
+      "lat": 28.725045,
+      "lon": 77.089636,
+      "general_name": "Rohini",
+      "city": "Delhi"
+    },
+    {
+      "id": 71,
+      "name": "Delhi_Grid_071",
+      "lat": 28.725045,
+      "lon": 77.124546,
+      "general_name": "Rohini",
+      "city": "Delhi"
+    },
+    {
+      "id": 72,
+      "name": "Delhi_Grid_072",
+      "lat": 28.725045,
+      "lon": 77.159455,
+      "general_name": "Saraswati Vihar Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 73,
+      "name": "Delhi_Grid_073",
+      "lat": 28.725045,
+      "lon": 77.194364,
+      "general_name": "Model Town Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 74,
+      "name": "Delhi_Grid_074",
+      "lat": 28.725045,
+      "lon": 77.229273,
+      "general_name": "Civil Lines Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 75,
+      "name": "Delhi_Grid_075",
+      "lat": 28.725045,
+      "lon": 77.264182,
+      "general_name": "Karawal Nagar Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 76,
+      "name": "Delhi_Grid_076",
+      "lat": 28.725045,
+      "lon": 77.299091,
+      "general_name": "Loni",
+      "city": "Delhi"
+    },
+    {
+      "id": 77,
+      "name": "Delhi_Grid_077",
+      "lat": 28.755676,
+      "lon": 77.002364,
+      "general_name": "Kanjhawalan Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 78,
+      "name": "Delhi_Grid_078",
+      "lat": 28.755676,
+      "lon": 77.037273,
+      "general_name": "Barwala",
+      "city": "Delhi"
+    },
+    {
+      "id": 79,
+      "name": "Delhi_Grid_079",
+      "lat": 28.755676,
+      "lon": 77.072182,
+      "general_name": "Rohini",
+      "city": "Delhi"
+    },
+    {
+      "id": 80,
+      "name": "Delhi_Grid_080",
+      "lat": 28.755676,
+      "lon": 77.107091,
+      "general_name": "Rohini",
+      "city": "Delhi"
+    },
+    {
+      "id": 81,
+      "name": "Delhi_Grid_081",
+      "lat": 28.755676,
+      "lon": 77.142,
+      "general_name": "Alipur Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 82,
+      "name": "Delhi_Grid_082",
+      "lat": 28.755676,
+      "lon": 77.176909,
+      "general_name": "Model Town Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 83,
+      "name": "Delhi_Grid_083",
+      "lat": 28.755676,
+      "lon": 77.211818,
+      "general_name": "Wazirabad",
+      "city": "Delhi"
+    },
+    {
+      "id": 84,
+      "name": "Delhi_Grid_084",
+      "lat": 28.755676,
+      "lon": 77.246727,
+      "general_name": "Karawal Nagar Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 85,
+      "name": "Delhi_Grid_085",
+      "lat": 28.755676,
+      "lon": 77.281637,
+      "general_name": "Rameshwar Park",
+      "city": "Delhi"
+    },
+    {
+      "id": 86,
+      "name": "Delhi_Grid_086",
+      "lat": 28.786306,
+      "lon": 77.054727,
+      "general_name": "Bawana Industrial Area",
+      "city": "Delhi"
+    },
+    {
+      "id": 87,
+      "name": "Delhi_Grid_087",
+      "lat": 28.786306,
+      "lon": 77.089636,
+      "general_name": "Barwala",
+      "city": "Delhi"
+    },
+    {
+      "id": 88,
+      "name": "Delhi_Grid_088",
+      "lat": 28.786306,
+      "lon": 77.124546,
+      "general_name": "Alipur",
+      "city": "Delhi"
+    },
+    {
+      "id": 89,
+      "name": "Delhi_Grid_089",
+      "lat": 28.786306,
+      "lon": 77.159455,
+      "general_name": "Ibrahimpur",
+      "city": "Delhi"
+    },
+    {
+      "id": 90,
+      "name": "Delhi_Grid_090",
+      "lat": 28.786306,
+      "lon": 77.194364,
+      "general_name": "Ibrahimpur",
+      "city": "Delhi"
+    },
+    {
+      "id": 91,
+      "name": "Delhi_Grid_091",
+      "lat": 28.786306,
+      "lon": 77.229273,
+      "general_name": "Tronica City",
+      "city": "Delhi"
+    },
+    {
+      "id": 92,
+      "name": "Delhi_Grid_092",
+      "lat": 28.816937,
+      "lon": 77.072182,
+      "general_name": "Narela Tehsil",
+      "city": "Delhi"
+    },
+    {
+      "id": 93,
+      "name": "Delhi_Grid_093",
+      "lat": 28.816937,
+      "lon": 77.107091,
+      "general_name": "Narela",
+      "city": "Delhi"
+    },
+    {
+      "id": 94,
+      "name": "Delhi_Grid_094",
+      "lat": 28.816937,
+      "lon": 77.142,
+      "general_name": "Hamidpur",
+      "city": "Delhi"
+    },
+    {
+      "id": 95,
+      "name": "Delhi_Grid_095",
+      "lat": 28.816937,
+      "lon": 77.176909,
+      "general_name": "Bakhtawar Pur",
+      "city": "Delhi"
+    }
+  ]
+}

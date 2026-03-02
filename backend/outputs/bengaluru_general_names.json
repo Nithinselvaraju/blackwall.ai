@@ -1,0 +1,464 @@
+{
+  "meta": {
+    "total_locations": 57,
+    "generated_at": "2026-02-09T11:47:47.887Z"
+  },
+  "reports": [
+    {
+      "grid": 1,
+      "name": "Point 1",
+      "lat": 13.122614,
+      "lon": 77.584248,
+      "general_name": "Raja Kempegowda Ward",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 2,
+      "name": "Point 2",
+      "lat": 13.114589,
+      "lon": 77.619781,
+      "general_name": "Kogilu",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 3,
+      "name": "Point 3",
+      "lat": 13.086668,
+      "lon": 77.631626,
+      "general_name": "Sampigehalli",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 4,
+      "name": "Point 4",
+      "lat": 13.057071,
+      "lon": 77.65377,
+      "general_name": "Byrathi",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 5,
+      "name": "Point 5",
+      "lat": 13.032656,
+      "lon": 77.669907,
+      "general_name": "Horamavu",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 6,
+      "name": "Point 6",
+      "lat": 13.01359,
+      "lon": 77.691193,
+      "general_name": "T.C Palya",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 7,
+      "name": "Point 7",
+      "lat": 13.007568,
+      "lon": 77.721062,
+      "general_name": "Hoodi",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 8,
+      "name": "Point 8",
+      "lat": 12.986828,
+      "lon": 77.752647,
+      "general_name": "Kadugodi",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 9,
+      "name": "Point 9",
+      "lat": 12.949356,
+      "lon": 77.750244,
+      "general_name": "Hagaduru",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 10,
+      "name": "Point 10",
+      "lat": 12.966085,
+      "lon": 77.721748,
+      "general_name": "Kundalahalli",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 11,
+      "name": "Point 11",
+      "lat": 12.986828,
+      "lon": 77.699776,
+      "general_name": "Bharath Aikya Ward",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 12,
+      "name": "Point 12",
+      "lat": 12.951698,
+      "lon": 77.694283,
+      "general_name": "Marathahalli",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 13,
+      "name": "Point 13",
+      "lat": 12.925599,
+      "lon": 77.723808,
+      "general_name": "Gunjur",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 14,
+      "name": "Point 14",
+      "lat": 12.918237,
+      "lon": 77.687759,
+      "general_name": "Shivanasamudra Ward",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 15,
+      "name": "Point 15",
+      "lat": 12.909537,
+      "lon": 77.652397,
+      "general_name": "Iblur",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 16,
+      "name": "Point 16",
+      "lat": 12.874397,
+      "lon": 77.657204,
+      "general_name": "Chikkathoguru",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 17,
+      "name": "Point 17",
+      "lat": 12.88176,
+      "lon": 77.631454,
+      "general_name": "Vishwapriya Nagara",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 18,
+      "name": "Point 18",
+      "lat": 12.864021,
+      "lon": 77.602615,
+      "general_name": "Yelenahalli",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 19,
+      "name": "Point 19",
+      "lat": 12.855653,
+      "lon": 77.570343,
+      "general_name": "Anjanapura",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 20,
+      "name": "Point 20",
+      "lat": 12.857661,
+      "lon": 77.538414,
+      "general_name": "Talagattapura",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 21,
+      "name": "Point 21",
+      "lat": 12.887449,
+      "lon": 77.519531,
+      "general_name": "Subramanyapura",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 22,
+      "name": "Point 22",
+      "lat": 12.888453,
+      "lon": 77.489319,
+      "general_name": "Hemmigepura",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 23,
+      "name": "Point 23",
+      "lat": 12.913552,
+      "lon": 77.485886,
+      "general_name": "Mylasandra",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 24,
+      "name": "Point 24",
+      "lat": 12.945007,
+      "lon": 77.496872,
+      "general_name": "Nagadevanahalli",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 25,
+      "name": "Point 25",
+      "lat": 12.975453,
+      "lon": 77.489662,
+      "general_name": "Byadarahalli",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 26,
+      "name": "Point 26",
+      "lat": 13.008906,
+      "lon": 77.488976,
+      "general_name": "Andrahalli",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 27,
+      "name": "Point 27",
+      "lat": 13.043359,
+      "lon": 77.502022,
+      "general_name": "Nagasandra",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 28,
+      "name": "Point 28",
+      "lat": 13.069446,
+      "lon": 77.525368,
+      "general_name": "Shettihalli",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 29,
+      "name": "Point 29",
+      "lat": 13.088173,
+      "lon": 77.55558,
+      "general_name": "Attur",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 30,
+      "name": "Point 30",
+      "lat": 13.096867,
+      "lon": 77.580643,
+      "general_name": "Yelahanka Satellite Town",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 31,
+      "name": "Point 31",
+      "lat": 13.080147,
+      "lon": 77.601929,
+      "general_name": "Byatarayanapura",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 32,
+      "name": "Point 32",
+      "lat": 13.055734,
+      "lon": 77.619095,
+      "general_name": "Jakkur",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 33,
+      "name": "Point 33",
+      "lat": 13.024628,
+      "lon": 77.634201,
+      "general_name": "Kacharakanahalli",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 34,
+      "name": "Point 34",
+      "lat": 12.99954,
+      "lon": 77.659607,
+      "general_name": "Kasturi Nagar",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 35,
+      "name": "Point 35",
+      "lat": 12.967758,
+      "lon": 77.666473,
+      "general_name": "Jagadish Nagar",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 36,
+      "name": "Point 36",
+      "lat": 12.940657,
+      "lon": 77.661667,
+      "general_name": "Yamalur",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 37,
+      "name": "Point 37",
+      "lat": 12.958725,
+      "lon": 77.632141,
+      "general_name": "Agaram",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 38,
+      "name": "Point 38",
+      "lat": 12.990173,
+      "lon": 77.627335,
+      "general_name": "Cox Town",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 39,
+      "name": "Point 39",
+      "lat": 13.064764,
+      "lon": 77.576866,
+      "general_name": "Thindlu",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 40,
+      "name": "Point 40",
+      "lat": 13.010913,
+      "lon": 77.600899,
+      "general_name": "Varalakshmi Nagar",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 41,
+      "name": "Point 41",
+      "lat": 12.975788,
+      "lon": 77.596092,
+      "general_name": "Sampangirama Nagar",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 42,
+      "name": "Point 42",
+      "lat": 12.926603,
+      "lon": 77.626305,
+      "general_name": "Kormangala East",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 43,
+      "name": "Point 43",
+      "lat": 12.902509,
+      "lon": 77.603989,
+      "general_name": "Bilekahalli",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 44,
+      "name": "Point 44",
+      "lat": 12.888788,
+      "lon": 77.576523,
+      "general_name": "RBI Layout",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 45,
+      "name": "Point 45",
+      "lat": 12.88678,
+      "lon": 77.5494,
+      "general_name": "Anjanapura",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 46,
+      "name": "Point 46",
+      "lat": 13.019611,
+      "lon": 77.522278,
+      "general_name": "Parvathi Nagar",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 47,
+      "name": "Point 47",
+      "lat": 13.017269,
+      "lon": 77.554893,
+      "general_name": "Goraguntepalya",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 48,
+      "name": "Point 48",
+      "lat": 12.998202,
+      "lon": 77.574806,
+      "general_name": "Dattatreya Ward",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 49,
+      "name": "Point 49",
+      "lat": 12.983482,
+      "lon": 77.54528,
+      "general_name": "Dr Rajkumar Ward",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 50,
+      "name": "Point 50",
+      "lat": 12.985824,
+      "lon": 77.517471,
+      "general_name": "Kottegepalya",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 51,
+      "name": "Point 51",
+      "lat": 12.955713,
+      "lon": 77.530861,
+      "general_name": "Attigupe",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 52,
+      "name": "Point 52",
+      "lat": 12.938984,
+      "lon": 77.601242,
+      "general_name": "S.G Palya",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 53,
+      "name": "Point 53",
+      "lat": 12.922588,
+      "lon": 77.57206,
+      "general_name": "Dharmagiri Ward",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 54,
+      "name": "Point 54",
+      "lat": 12.956048,
+      "lon": 77.56588,
+      "general_name": "Devaraj Urs Ward",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 55,
+      "name": "Point 55",
+      "lat": 13.037004,
+      "lon": 77.585449,
+      "general_name": "Bhoopasandra",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 56,
+      "name": "Point 56",
+      "lat": 13.049379,
+      "lon": 77.55043,
+      "general_name": "HMT Ward",
+      "city": "Bengaluru"
+    },
+    {
+      "grid": 57,
+      "name": "Point 57",
+      "lat": 12.91991,
+      "lon": 77.527771,
+      "general_name": "Bangarappa Nagara",
+      "city": "Bengaluru"
+    }
+  ]
+}

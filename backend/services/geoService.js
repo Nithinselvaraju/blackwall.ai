@@ -41,11 +41,11 @@ export async function generateGeoGrid(region) {
         "https://nominatim.openstreetmap.org/search",
         {
           params: {
-            q: region,
+            q: `${region}, India`,
             format: "json",
             polygon_geojson: 1,
             addressdetails: 1,
-            limit: 1
+            limit: 10
           },
           headers: { "User-Agent": "GeoAI-App/1.0" }
         }
@@ -61,21 +61,32 @@ export async function generateGeoGrid(region) {
   }
 
   if (!response?.data || response.data.length === 0) {
-  throw new Error("Region not found or rate-limited");
+    throw new Error("Region not found or rate-limited");
   }
 
-  let geojson = response.data[0].geojson;
+  const bestMatch =
+    response.data.find(place => {
+
+      const osmType = place.osm_type?.toLowerCase() || "";
+      const type = place.type?.toLowerCase() || "";
+      const display = place.display_name?.toLowerCase() || "";
+
+      return (
+        display.includes(region.toLowerCase()) &&
+        osmType === "relation" &&
+        (
+          type.includes("city") ||
+          type.includes("administrative") ||
+          type.includes("district") ||
+          type.includes("county")
+        )
+      );
+    }) || response.data[0];
+
+  let geojson = bestMatch.geojson;
 
 
-  if (!geojson || !geojson.coordinates) {
 
-    const lon = parseFloat(response.data[0].lon);
-    const lat = parseFloat(response.data[0].lat);
-
-    geojson = turf.circle([lon, lat], 30, {
-      units: "kilometers"
-    }).geometry;
-  }
 
   const cacheDir = path.join(__dirname, "../cache");
   if (!fs.existsSync(cacheDir)) {
@@ -89,13 +100,17 @@ export async function generateGeoGrid(region) {
     console.log("Using cached region data");
     return JSON.parse(fs.readFileSync(cachePath, "utf-8"));
   }
-  
-  if (geojson.type === "Point") {
-    const [lon, lat] = geojson.coordinates;
-    geojson = turf.circle([lon, lat], 25, {
-      units: "kilometers"
-    }).geometry;
-  }
+
+    /* STRICT BOUNDARY MODE */
+    if (
+      !geojson ||
+      !geojson.coordinates ||
+      geojson.type === "Point"
+    ) {
+      throw new Error(
+        `Boundary polygon not available for ${region}`
+      );
+    }
 
   const regionPolygon = turf.feature(geojson);
 
